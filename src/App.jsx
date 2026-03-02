@@ -14,12 +14,14 @@ import {
   WandSparkles,
 } from "lucide-react";
 
+const assetPath = (file) => `${import.meta.env.BASE_URL}${file}`;
+
 const navItems = [
   { label: "Contribution", icon: Layers },
   { label: "Abonnements", icon: Wallet },
   { label: "Whitelists", icon: ShieldCheck },
 ];
-const sliderImages = ["/slide1.webp", "/slide2.webp", "/slide3.webp"];
+const sliderImages = [assetPath("slide1.webp"), assetPath("slide2.webp"), assetPath("slide3.webp")];
 const sliderCaptions = [
   {
     badge: "Slide 1",
@@ -46,7 +48,7 @@ const subscriptionPlans = [
     name: "OPAL INVEST",
     tier: "LIMITED, BOT = BOT+",
     monthlyPrice: 499.99,
-    banner: "/OPALBANNER.png",
+    banner: assetPath("OPALBANNER.png"),
     accent: "#6fc2ff",
     benefits: [
       "SYS Fabulous BOT + suppression des dogs/typeuse",
@@ -72,7 +74,7 @@ const subscriptionPlans = [
     name: "RUBY INVEST",
     tier: "LIMITED, CROWN+",
     monthlyPrice: 199.99,
-    banner: "/RUBYBANNER.png",
+    banner: assetPath("RUBYBANNER.png"),
     accent: "#ff6c96",
     benefits: [
       "Appel exclusif (voc 10 min avec les fondateurs)",
@@ -97,7 +99,7 @@ const subscriptionPlans = [
     name: "DIAMOND INVEST",
     tier: "ROYAL+",
     monthlyPrice: 99.99,
-    banner: "/DIAMONDBANNER.png",
+    banner: assetPath("DIAMONDBANNER.png"),
     accent: "#ab7bff",
     benefits: [
       "Appel exclusif (voc 5 min avec les fondateurs)",
@@ -122,7 +124,7 @@ const subscriptionPlans = [
     name: "PLATINUM INVEST",
     tier: "CORE",
     monthlyPrice: 59.99,
-    banner: "/DIAMSBANNER.png",
+    banner: assetPath("DIAMSBANNER.png"),
     accent: "#5ee8ff",
     benefits: [
       "Couleur degradee role perso (3 predefinis)",
@@ -139,7 +141,7 @@ const subscriptionPlans = [
     name: "GOLD INVEST",
     tier: "STANDARD+",
     monthlyPrice: 39.99,
-    banner: "/GOLDBANNER.png",
+    banner: assetPath("GOLDBANNER.png"),
     accent: "#ffbe40",
     benefits: [
       "WL clic droit +2 (TO/MUTE/MOVE)",
@@ -153,7 +155,7 @@ const subscriptionPlans = [
     name: "SILVER INVEST",
     tier: "ENTRY",
     monthlyPrice: 19.99,
-    banner: "/SILVERBANNER.png",
+    banner: assetPath("SILVERBANNER.png"),
     accent: "#c5d0db",
     benefits: [
       "Flex UHQ",
@@ -428,7 +430,7 @@ const baseOffers = [
     perm: "Perm 6",
     price: "800 €",
     emoji: "🤴",
-    emojiImage: "/crown.png",
+    emojiImage: assetPath("crown.png"),
     contributors: 56,
     commands: [],
     perms: ["Perm role", "Perm image", "Perms clic droit House Voice"],
@@ -475,7 +477,7 @@ const baseOffers = [
     perm: "Perm 9",
     price: "3500 €",
     emoji: "♕",
-    emojiImage: "/couronne.webp",
+    emojiImage: assetPath("couronne.webp"),
     contributors: 12,
     commands: ["giveaway, allbots"],
     perms: ["Perm salon", "Perm ban clic droit"],
@@ -820,7 +822,7 @@ export default function App() {
       <header className="topbar">
         <div className="topbar-head">
           <div className="brand">
-            <img className="brand-logo" src="/shibuya.webp" alt="Shibuya" />
+            <img className="brand-logo" src={assetPath("shibuya.webp")} alt="Shibuya" />
             <div>
               <p className="brand-title">Shibuya Invest</p>
               <p className="brand-sub">{subtitle}</p>
@@ -864,7 +866,7 @@ export default function App() {
             rel="noreferrer"
             onClick={() => setMenuOpen(false)}
           >
-            <img className="nav-icon-svg nav-icon-img" src="/discord.webp" alt="" aria-hidden="true" />
+            <img className="nav-icon-svg nav-icon-img" src={assetPath("discord.webp")} alt="" aria-hidden="true" />
             <span>Contribuer</span>
           </a>
         </nav>
