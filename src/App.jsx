@@ -99,7 +99,7 @@ const subscriptionPlans = [
     name: "DIAMOND INVEST",
     tier: "ROYAL+",
     monthlyPrice: 99.99,
-    banner: assetPath("DIAMONDBANNER.png"),
+    banner: assetPath("DIAMSDBANNER.png"),
     accent: "#ab7bff",
     benefits: [
       "Appel exclusif (voc 5 min avec les fondateurs)",
@@ -124,7 +124,7 @@ const subscriptionPlans = [
     name: "PLATINUM INVEST",
     tier: "CORE",
     monthlyPrice: 59.99,
-    banner: assetPath("DIAMSBANNER.png"),
+    banner: assetPath("DIAMONDBANNER.png"),
     accent: "#5ee8ff",
     benefits: [
       "Couleur degradee role perso (3 predefinis)",
