@@ -99,7 +99,7 @@ const subscriptionPlans = [
     name: "DIAMOND INVEST",
     tier: "ROYAL+",
     monthlyPrice: 99.99,
-    banner: assetPath("DIAMSDBANNER.png"),
+    banner: assetPath("DIAMSBANNER.png"),
     accent: "#ab7bff",
     benefits: [
       "Appel exclusif (voc 5 min avec les fondateurs)",
