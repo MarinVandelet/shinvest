@@ -258,7 +258,7 @@ const whitelistGroups = [
         price: 150,
         requirement: "@CROWN minimum",
         hook: "Ajoute des perms sans limite BOT PROTECT.",
-        unlocks: ["2 etoiles", "co-owner", "gestions", "+pic", "og friende"],
+        unlocks: ["⭐⭐", "co-owner", "gestions", "+pic", "og friend"],
       },
       {
         name: "OWNER ROLE",
@@ -272,7 +272,7 @@ const whitelistGroups = [
         price: 250,
         requirement: "Owner requis",
         hook: "Version systeme pour palette complete de roles.",
-        unlocks: ["☘", "❄️", "flocon", "TOUCHE = BL"],
+        unlocks: ["☘", "❄️", "bulle", "TOUCHE = BL"],
       },
       {
         name: "ROLE PERSO",
