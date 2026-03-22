@@ -349,7 +349,7 @@ const baseOffers = [
     title: "Kami",
     role: "@co-owner",
     perm: "Perm 1",
-    price: "15 €",
+    price: "10 €",
     emoji: "🌀",
     contributors: 305,
     starterPack: true,
